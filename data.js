@@ -12,6 +12,16 @@
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// Initialize animal variable with an empty opject
+var animal = {};
+// Add species key to animal object with the value of 'dog' using dot notation
+animal.species = 'dog';
+// Add name key to animal object with the value of 'Darla' using bracket notaiton
+animal['name'] = 'Darla';
+// Add noises key to animal object with the value of an empty array
+animal.noises = [];
+// Log animal object to the console
+console.log(animal); // { species: 'dog' , name: 'Darla', noises: [] }
 
 
 //////////////////////////////////////////////////////////////////////
