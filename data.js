@@ -54,16 +54,26 @@ console.log(noises);
 /* Using bracket notation, assign the noises array to the animal object's
    noises property */
 animal['noises'] = noises;
-
+// Using dot notation, push 'borf' into the animal object's noise array
+animal.noises.push('borf');
+// Log the animal object to the console
 console.log(animal);
 
 /* *******************************************************************
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ *    - You can use dot notation to access properties on objects by typing
+ *      the object name followed by a dot (.) and then the name of the key
+ *      on the property.
+ *    - You can also use bracket notation by typing the object name followed
+ *      by brackets with the name of the key written as a string inside 
  * 2. What are the different ways of accessing elements on arrays?
- *
+ *    - You can use bracket notation to access an element in an array by
+ *      typing the array name followed by brackets with index location of the
+ *      elements you're looking for. Be aware that the first index position
+ *      is 0. If you want to avoid hard coding the position of the last element 
+ *      of the array, the last position is always [Array.length - 1].
  * *******************************************************************
  */
 
@@ -80,7 +90,12 @@ console.log(animal);
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+// Initialize animals variable with an empty array
+var animals = [];
+// Push the animal object into the animals array
+animals.push(animal);
+// Log animals to the console
+console.log(animals);
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
