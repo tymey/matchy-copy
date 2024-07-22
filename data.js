@@ -28,13 +28,34 @@ console.log(animal); // { species: 'dog' , name: 'Darla', noises: [] }
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+// Initialize noises variable with an empty array
+var noises = [];
+// Add the string 'bark' to the 0 index of the noises array using bracket notation
+noises[0] = 'bark';
+// Push 'woof' to the end of the noises array
+noises.push('woof');
+// Unshift 'ruff' to the beginning of the noises array
+noises.unshift('ruff');
+/* Using bracket notation, add 'bow-wow' to the noises array at 
+   the index of noises.length */
+noises[noises.length] = 'bow-wow';
+// Log the length of the noises array to the console
+console.log(noises.length);
+/* Log the last element of the noises array to the console without 
+   hard coding the index (use noises[noises.length - 1]) */
+console.log(noises[noises.length - 1]);
+// Log the noises array to the console
+console.log(noises);
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/* Using bracket notation, assign the noises array to the animal object's
+   noises property */
+animal['noises'] = noises;
 
+console.log(animal);
 
 /* *******************************************************************
  * Step 4 - Review
