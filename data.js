@@ -94,7 +94,35 @@ console.log(animal);
 var animals = [];
 // Push the animal object into the animals array
 animals.push(animal);
-// Log animals to the console
+// Log the animals array to the console
+console.log(animals);
+// Initialize duck variable with the given object info
+var duck = {
+   species: 'duck',
+   name: 'Jerome',
+   noises: ['quack', 'honk', 'sneeze', 'woosh']
+};
+// Push duck object into animals array
+animals.push(duck);
+// Log the animals array to the console
+console.log(animals);
+// Initialize cat variable with an object containing a species, name, and at least two sounds
+var cat = {
+   species: 'cat',
+   name: 'Taki',
+   noises: ['meow', 'purr']
+};
+// Initialize pig variable with an object containing a species, name, and at least two sounds
+var pig = {
+   species: 'pig',
+   name: 'Charlotte',
+   noises: ['oink', 'squeeee']
+};
+// Push the cat object into the animals array
+animals.push(cat);
+// Push the pig object into the animals array
+animals.push(pig);
+// Log the animals array to the console
 console.log(animals);
 
 //////////////////////////////////////////////////////////////////////
