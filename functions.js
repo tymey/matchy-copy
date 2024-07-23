@@ -40,13 +40,39 @@ function search(array, string) {
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/**
+ * I: The function receives an array of animals, a string representing 
+ *    the name of the animal on which to perform a search, and an object
+ *    that represents the replacement animal.
+ * O: The function does not return anything. If the input string name exists
+ *    with the input array of animals, replace the entire object with the 
+ *    input replacement object.
+ * C: N/A
+ * E: N/A
+ */
 
+function replace(array, string, object) {
+    /* Declare for loop using i; Start: 0; Stop: array.length; Increment 
+    by 1 each loop */
+    for (var i = 0; i < array.length; i++) {
+        // Check if array[i].name === string
+        if (array[i].name === string) {
+            // If true, reassign array[i] = object
+            array[i] = object;
+        }
+    }
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+/**
+ * I: The function receives an array of animals 
+ * O: 
+ * C: 
+ * E: 
+ */
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
