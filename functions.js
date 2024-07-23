@@ -68,11 +68,26 @@ function replace(array, string, object) {
 //////////////////////////////////////////////////////////////////////
 
 /**
- * I: The function receives an array of animals 
- * O: 
- * C: 
- * E: 
+ * I: The function receives an array of animals and a string of the name
+ *    of an animal on which to perform a search.
+ * O: The function does not return anything. The function will remove
+ *    an object from the input animals array if their name matches the 
+ *    input string of the name of an animal.
+ * C: N/A
+ * E: N/A
  */
+
+function remove(array, string) {
+    /* Declare for loop using i; Start: 0; Stop: array.length; Increment 
+    by 1 each loop */
+    for (var i = 0; i < array.length; i++) {
+        // Check if array[i].name === string
+        if (array[i].name === string) {
+            // If true, array.splice(i, 1) to remove array [i] object
+            array.splice(i, 1);
+        }
+    }
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
