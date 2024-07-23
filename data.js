@@ -148,12 +148,12 @@ function getRandom(array) {
    /* Math.floor(Math.random * array.length) returns an integer from 0 
      (inclusive) to array.length (exclusive) */
    // Return a random index element of array
-   return array[Math.floor(Math.random * array.length)];
+   return array[Math.floor(Math.random() * array.length)];
 }
 
 /* Push the invocation of getRandom using the animals array into the 
    friends array */
-friends.push(getRandom(animals));
+friends.push(getRandom(animals).name);
 
 // Log the friends array to the console
 console.log(friends);
