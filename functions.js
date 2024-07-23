@@ -93,7 +93,26 @@ function remove(array, string) {
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/**
+ * I: The function receives an array of animals and an object representing
+ *    a new animal to be added.
+ * O: The function checks if the name property on the input object has a 
+ *    name property with a length greater than 0, a species property with
+ *    a length greater than 0, and has a unique name (meaning no other animals
+ *    have that name). The function will add this new input object to the input
+ *    animals array ONLY if all the other conditions pass.
+ * C: N/A
+ * E: N/A
+ */
 
+function add(array, object) {
+    /* Check if object.name.length > 0 AND object.species.length > 0 AND 
+    search(array, object.name) !== null */
+    if (object.name.length > 0 && object.species.length > 0 && search(array, object.name) !== null) {
+        // If true, push object to the end of array
+        array.push(object);
+    }
+}
 
 /**
  * You did it! You're all done with Matchy!
