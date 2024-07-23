@@ -129,7 +129,41 @@ console.log(animals);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// Let's use an array data structure to create a list of friends.
+   /* An array is a great choice since it can hold a list of 'friends'
+      without the need of a key name for each friend. This also makes
+      adding more friends an easy task by just using the push method. */
+// Initialize friends variable with an empty array
+var friends = [];
 
+/**
+ * I: The function receives an array.
+ * O: The function returns a random index element from the input array.
+ * C: Must use Math.random
+ * E: N/A
+ */
+
+// Declare function called getRandom with one parameter: array
+function getRandom(array) {
+   /* Math.floor(Math.random * array.length) returns an integer from 0 
+     (inclusive) to array.length (exclusive) */
+   // Return a random index element of array
+   return array[Math.floor(Math.random * array.length)];
+}
+
+/* Push the invocation of getRandom using the animals array into the 
+   friends array */
+friends.push(getRandom(animals));
+
+// Log the friends array to the console
+console.log(friends);
+
+/* Using bracket notation, add friends key to animals[0] with the value 
+   of the friends array */
+animals[0]['friends'] = friends;
+
+// Log the animals object to the console
+console.log(animals);
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
