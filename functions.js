@@ -107,8 +107,8 @@ function remove(array, string) {
 
 function add(array, object) {
     /* Check if object.name.length > 0 AND object.species.length > 0 AND 
-    search(array, object.name) !== null */
-    if (object.name.length > 0 && object.species.length > 0 && search(array, object.name) !== null) {
+    search(array, object.name) === null */
+    if (object.name.length > 0 && object.species.length > 0 && search(array, object.name) === null) {
         // If true, push object to the end of array
         array.push(object);
     }
